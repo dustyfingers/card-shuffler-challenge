@@ -16,8 +16,8 @@ function App({ dispatch, deck }) {
   const handleShuffle = async (givenDeck) => {
     // Math.random() - 0.5 can be either (+) or (-), resorting the array
     // semi-naive solution
-    const shuffledDeck = givenDeck.sort(() => Math.random() - 0.5);
-    dispatch(setDeck([...shuffledDeck]));
+    const shuffledDeck = [...givenDeck.sort(() => Math.random() - 0.5)];
+    dispatch(setDeck(shuffledDeck));
   };
 
   return (
