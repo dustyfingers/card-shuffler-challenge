@@ -14,7 +14,6 @@ function App({ dispatch, deck }) {
   }, []);
 
   const handleShuffle = async (givenDeck) => {
-    // todo: implement fisher-yates algorithm shuffling
     let i = givenDeck.length;
     // loop through array, skipping index 0
     // generating a random num within the arr each iteration
