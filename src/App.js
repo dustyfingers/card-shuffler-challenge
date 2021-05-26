@@ -14,10 +14,16 @@ function App({ dispatch, deck }) {
   }, []);
 
   const handleShuffle = async (givenDeck) => {
-    // Math.random() - 0.5 can be either (+) or (-), resorting the array
-    // semi-naive solution
-    const shuffledDeck = [...givenDeck.sort(() => Math.random() - 0.5)];
-    dispatch(setDeck(shuffledDeck));
+    // todo: implement fisher-yates algorithm shuffling
+    let i = givenDeck.length;
+    // loop through array, skipping index 0
+    // generating a random num within the arr each iteration
+    while (i--) {
+      const randIdx = Math.floor(Math.random() * (i + 1));
+      // swap the value at the random index with the value at the i index
+      [givenDeck[i], givenDeck[randIdx]] = [givenDeck[randIdx], givenDeck[i]];
+    }
+    dispatch(setDeck([...givenDeck]));
   };
 
   return (
