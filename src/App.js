@@ -22,8 +22,8 @@ function App({ dispatch, deck }) {
 
   return (
     <div className="App">
-      <CardsSection />
       <button onClick={() => handleShuffle(deck)}>SHUFFLE</button>
+      <CardsSection />
     </div>
   );
 }
