@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Louie's Card Shuffler",
+  "name": "Louie's Card Shuffler Demo",
   "icons": [
     {
       "src": "favicon.ico",
