@@ -13,6 +13,9 @@ function App({ dispatch, deck }) {
     dispatch(setDeck(newDeck.cards));
   }, []);
 
+  // fisher yates algorithm!
+  // loop through array, skipping index 0, gen a random num within the arr each iteration
+  // swap the value at the random index with the value at the i index
   const handleShuffle = async (givenDeck) => {
     let i = givenDeck.length;
     while (i--) {
