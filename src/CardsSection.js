@@ -5,15 +5,13 @@ import { connect } from 'react-redux';
 const CardsSection = ({ deck }) => {
     return (
         <div className="cards">
+            { /* rank & suit are parameterized backwards in the package I used! Odd indeed... */ }
             {deck ? deck.map(card =>
-                {
-                    // rank & suit are parameterized backwards in the lib used!
-                    return <Card 
-                    key={`${card.value}${card.suit}`} 
+                <Card 
+                    key={`${card.value}${card.suit}`}
                     rank={card.suit}
                     suit={card.value}
                     className="card" />
-                }
             ) : 'No deck to show...'}
         </div>
     );
