@@ -2,8 +2,33 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .cards {
-  display: grid;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+
+.shuffle-btn {
+  margin: 2rem;
+  padding: 16px;
+  color: #e1623f;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 0px;
+  border: 2px solid #e1623f;
+}
+
+/* react-playing-card style overwrites */
+.wrapper {
+  background: #fff !important;
+  display: inline;
+}
+
+.card {
+  margin: 2rem !important;
 }
