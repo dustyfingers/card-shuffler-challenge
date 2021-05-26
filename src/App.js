@@ -15,10 +15,8 @@ function App(props) {
   }, []);
 
   const handleShuffle = givenDeck => {
-    console.log('shuffling deck!');
     // Math.random() - 0.5 can be either (+) or (-), resorting the array
     // semi-naive solution
-    console.log(givenDeck)
     const shuffledDeck = givenDeck.cards.sort(() => Math.random() - 0.5);
     dispatch(setDeck(shuffledDeck));
   };
