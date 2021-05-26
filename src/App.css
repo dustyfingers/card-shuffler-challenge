@@ -9,6 +9,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
 }
 
 .shuffle-btn {
@@ -25,7 +27,7 @@
 /* react-playing-card style overwrites */
 .wrapper {
   background: #fff !important;
-  display: inline;
+  border: 5px solid green;
 }
 
 .card {
