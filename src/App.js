@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import './App.css';
 import Deck from './Deck';
-import CardsSection from './Cards';
+import CardsSection from './CardsSection';
 import { setDeck } from "./redux/deck/deck-actions";
 
 function App({ dispatch, deck }) {
@@ -22,7 +22,7 @@ function App({ dispatch, deck }) {
 
   return (
     <div className="App">
-      <button onClick={() => handleShuffle(deck)}>SHUFFLE</button>
+      <button className="shuffle-btn" onClick={() => handleShuffle(deck)}>SHUFFLE DECK</button>
       <CardsSection />
     </div>
   );
