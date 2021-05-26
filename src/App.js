@@ -20,7 +20,6 @@ function App(props) {
     // semi-naive solution
     const shuffledDeck = givenDeck.sort(() => Math.random() - 0.5);
     dispatch(setDeck(shuffledDeck));
-    console.log(shuffledDeck)
   };
 
   return (

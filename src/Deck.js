@@ -14,10 +14,6 @@ class Deck {
         }
         this.cards = cards;
     }
-
-    shuffle() {
-        
-    }
 }
 
 export default Deck;
