@@ -2,8 +2,8 @@
 
 # run 'yarn install'
 
-# 'yarn start' this here bad boy
+# 'yarn start' this bad boy
 
 # explore!
 
-# profit
+# ...profit?

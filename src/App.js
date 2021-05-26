@@ -15,11 +15,8 @@ function App({ dispatch, deck }) {
 
   const handleShuffle = async (givenDeck) => {
     let i = givenDeck.length;
-    // loop through array, skipping index 0
-    // generating a random num within the arr each iteration
     while (i--) {
       const randIdx = Math.floor(Math.random() * (i + 1));
-      // swap the value at the random index with the value at the i index
       [givenDeck[i], givenDeck[randIdx]] = [givenDeck[randIdx], givenDeck[i]];
     }
     dispatch(setDeck([...givenDeck]));
